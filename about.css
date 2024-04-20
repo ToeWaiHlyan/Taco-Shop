@@ -1,0 +1,437 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Oswald:wght@200;700&family=Roboto:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+body
+{
+    height: 100vh;
+}
+
+.first-section-container
+{
+    position: relative;
+    padding: 100px 100px;
+}
+
+.hover 
+{
+    color: #fcb900;
+}
+
+.home-hover:hover,
+.order:hover
+{
+    color: #14aa8f;
+}
+
+.hover:hover
+{
+    color: #14aa8f;
+}
+
+.about 
+{
+    color: #14aa8f;
+}
+
+.background-image
+{
+    background-image: url('./pic/bg.svg');
+    background-repeat: no-repeat;
+    background-size: 1250px;
+    padding-top: 140px;
+    padding-bottom: 140px;
+}
+
+.location-header
+{
+    position: absolute;
+    left: 280px;
+    top:190px;
+    font-family: Oswald,Arial, Helvetica, sans-serif;
+    color: #43C895;
+    letter-spacing: 1px;
+    font-size: 48px;
+}
+
+.location-section 
+{
+    margin-top: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: space-around;
+}
+
+.location-first-section
+{
+    width: 300px;
+    height: 250px;
+    background-color: #43C895;
+    color: white;
+    padding: 50px 50px;
+}
+
+.location-first-section h4 
+{
+    font-family: Oswald,Arial, Helvetica, sans-serif;
+    margin-bottom: 20px;
+}
+
+.location-first-section p 
+{
+    font-family: PT Serif,Arial, Helvetica, sans-serif;
+    margin-bottom: 20px;
+    color: #FFFFFFB3;
+}
+
+.location-first-section a 
+{
+    text-decoration: none;
+    font-size: 11px;
+    font-family: Montserrat,Arial, Helvetica, sans-serif;
+    color: white;
+    letter-spacing: 1px;
+}
+
+.location-first-section a:hover 
+{
+    content: '';
+    border-bottom: 1px solid lightgray;
+}
+
+.location-second-section h1
+{
+    color: #43C895;
+    margin-bottom: 20px;
+    font-family: Oswald,Arial, Helvetica, sans-serif;
+}
+
+.open-hour-container
+{
+    display: grid;
+    padding: 0px 100px;
+    font-family: oswald,Arial, Helvetica, sans-serif;
+    color: #14aa8f;
+    grid-template-columns:  auto auto;
+}
+
+.open-hour-first-section
+{
+    position: relative;
+    overflow: hidden;
+}
+
+.open-hour-second-section
+{
+    margin-top: 100px;
+}
+
+
+.open-hour-first-section h1
+{
+    margin-bottom: 50px;
+}
+
+.open-hour-first-section h4
+{
+    margin-bottom: 50px;
+}
+
+.open-hour-second-section h4
+{
+    margin-bottom: 50px;
+}
+
+.open-hour-first-section::after
+{
+    content: "";
+    position: absolute;
+    top:60px;
+    width: 170px;
+    border-bottom: calc(0.6px + 0.03em) solid #e5e5e7;
+}
+
+.hour-container 
+{
+    width: 500px;
+}
+
+.hour 
+{
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+    margin-bottom: 20px;
+    position: relative;
+    font-family: PT Serif,Arial, Helvetica, sans-serif;
+    color: #7f6430;
+}
+
+.hour::after
+{
+    content: "";
+    position: absolute;
+    top:30px;
+    width: 2000px;
+    border-bottom: calc(0.6px + 0.03em) solid #e5e5e7;
+}
+
+.content-container
+{
+    margin-top: 50px;
+    padding: 0px 100px;
+    position: relative;
+    font-family: Oswald,Arial, Helvetica, sans-serif;
+    color: #14aa8f;
+}
+
+.content-container h1
+{
+    margin-bottom: 50px;
+}
+
+.content-container::after
+{
+    content: "";
+    position: absolute;
+    top:50px;
+    width: 170px;
+    border-bottom: calc(0.6px + 0.03em) solid #e5e5e7;
+}
+
+.call-container
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.phone-container
+{
+    margin-right: 100px;
+    margin-bottom: 20px;
+}
+
+.call-container h1 
+{
+    color:#F9D26D;
+    font-size: 32px;
+}
+
+.call-container .phone-header,
+.call-container .facebook-header
+{
+    margin-bottom: 20px;
+}
+
+.phone a ,
+.facebook a
+{
+    color: black;
+    text-decoration: none;
+}
+
+.phone,.facebook
+{
+    border:none;
+    padding: 10px;
+    width: 150px;
+    cursor: pointer;
+    height: 50px;
+    letter-spacing: 1px;
+    font-size: 11px;
+    font-family: Montserrat,Arial, Helvetica, sans-serif;
+}
+
+.phone:hover,.facebook:hover
+{
+    background-color: #f7f7f7;
+    color: #7f6430;
+    border: 1px solid #14aa8f;
+}
+
+.shop-photo-container
+{
+    padding: 50px 100px;
+}
+
+.photo-container
+{
+    display: grid;
+    gap:20px;
+    place-items: center;
+    max-width: 500px;
+    grid-template-columns: auto auto auto;
+}
+
+.photo-container img 
+{
+    width: 380px;
+}
+
+
+@media screen and (max-width:1024px)
+{
+    .hour-container
+    {
+        width: 300px;
+    }
+
+    .photo-container
+    {
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+}
+
+@media screen and (max-width : 768px)
+{
+    .background-image
+    {
+        display: none;
+    }
+
+    .location-header
+    {
+        display: flex;
+        letter-spacing: 0;
+        font-size: 40px;
+        justify-content: center;
+        position: absolute;
+        top:100px;
+    }
+
+    .location-header::after
+    {
+        content: '';
+        width: 0;
+        height: 0;
+    }
+
+    .hour-container
+    {
+        width: auto;
+    }
+
+    .open-hour-container
+    {
+        display: grid;
+        grid-template-columns: auto;
+    }
+
+    .open-hour-second-section
+    {
+        margin-top: 50px;
+    }
+
+    .hour-container
+    {
+        width: 600px;
+    }
+
+    .shop-photo-container
+    {
+        padding: 50px 20px;
+    }
+
+    .photo-container img 
+    {
+        width: 350px;
+    }
+}
+
+@media screen and (max-width : 425px)
+{
+
+    .first-section-container
+    {
+        padding: 50px 10px;
+    }
+    
+    .location-header
+    {
+        letter-spacing: 0;
+        font-size: 30px;
+        position: absolute;
+        top:50px;
+        left: 10px;
+    }
+
+    .location-section
+    {
+        margin-top: 50px;
+    }
+
+    .location-second-section
+    {
+        flex-grow: 1;   
+    }
+
+    .location-first-section
+    {
+        width:100%;
+        text-align: left;
+        padding: 50px 10px;
+    }
+
+    .location-second-section
+    {
+        width: 100%;
+    }
+
+    .open-hour-container
+    {
+        padding: 20px;
+    }
+
+    .content-container
+    {
+        padding: 10px;
+    }
+
+    .hour-container
+    {
+        width : 350px;
+    }
+
+    .call-container .phone-header,
+    .call-container .facebook-header
+    {
+        font-size: 25px;
+    }
+
+    .photo-container
+    {
+        display: grid;
+        grid-template-columns: auto;
+    }
+}
+
+@media screen and (max-width : 375px)
+{
+    .hour-container
+    {
+        width: 300px;
+    }
+
+    .hour-container
+    {
+        width: 300px;
+        font-size: 15px;
+    }
+}
+
+
+@media screen and (max-width:320px)
+{
+    .shop-photo-container img 
+    {
+        width: 280px;
+    }
+
+    .hour-container
+    {
+        width: 280px;
+        font-size: 12px;
+    }
+}

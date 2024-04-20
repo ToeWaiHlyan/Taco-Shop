@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taco Menu</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="icon" href="./pic/main.1.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="menu.css">
+    <script src="https://kit.fontawesome.com/c7563de4da.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="hambuger-menu-container">
+            <div class="hambuger-line1"></div>
+            <div class="hambuger-line2"></div>
+            <div class="hambuger-line3"></div>
+        </div>
+        <nav class="nav-bar">
+            <ul>
+                <li>
+                    <a href="index.html" class="home-hover">Home</a>
+                </li>
+                <li>
+                    <a href="#" class="hover">Menu</a>
+                </li>
+                <li>
+                    <a href="about.html" class="about">About</a>
+                </li>
+                <li>
+                    <a href="cart.html" class="cart-item">
+                        <img src="./pic/cart-icon.jpg">
+                        Cart
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="menu-first-container">
+        <div class="first-section" data-aos="fade-right"
+        data-aos-offset="200"
+        data-aos-delay="50"
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-out"
+        >
+            <h3>CHIPS AND QUESO?</h3>
+            <h1>YES PLEASE</h1>
+        </div>
+        <div class="second-section" data-aos="fade-left"
+        data-aos-offset="200"
+        data-aos-delay="50"
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-out">
+            <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="./pic/menu/chips-homemade-queso.jpg" class="d-block w-100" alt="...">
+                    <p>CHIPS AND QUESO</p>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./pic/menu/001_Tacos_de_carnitas,_carne_asada_y_al_pastor.jpg" class="d-block w-100" alt="...">
+                    <p>Beef Taco</p>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./pic/menu/rice-and-chorizo-burrito.webp" class="d-block w-100" alt="...">
+                    <p>Burrito</p>
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </main>
+
+    <main class="menu-second-container" data-aos="fade-up"
+    data-aos-offset="200"
+    data-aos-delay="50"
+    data-aos-duration="1000"
+    data-aos-easing="ease-in-out">
+        <div class="daily-special">
+            <h1>Daily Special</h1>
+            <div class="daily-special-container">
+                <div class="special-first-container">
+                    <h1>Monday</h1>
+                    <p>Borracho</p>
+                </div>
+                <div class="special-second-container">
+                    <h1>Tuesday</h1>
+                    <p>2 Tacos</p>
+                    <p>2 Giant Tacos</p>
+                </div>
+                <div class="special-third-container">
+                    <h1>Wednesday</h1>
+                    <p>Taco Salad</p>
+                </div>
+                <div class="special-fourth-container">
+                    <h1>Thursday</h1>
+                    <p>Sancho Supreme</p>
+                </div>
+            </div>
+        </div>
+    </main>
+        
+    <div class="menu-search-container">
+        <div class="search-container">
+            <input type="text" class="menu-search" placeholder="Enter a name of foods"> 
+            <button class="search-icon">
+                <img src="./pic/search.png">
+            </button>
+        </div>
+    </div>
+
+    <h1 class="menu-foods">Taco Shop Menus</h1>
+    <div class="btn-container">
+        <button class="btn btn-clicked" data-filter="all">All</button>
+        <button class="btn" data-filter="tacos">Tacos</button>
+        <button class="btn" data-filter="specialties">Specialties</button>
+        <button class="btn" data-filter="burritos">Burritos</button>
+            <a href="cart.html" class="cart">
+                <img src="./pic/cart-icon.jpg">
+                <p class="quantity">0</p>
+            </a>
+    </div>
+    <main class="menu-foods-container">
+        <div class="foods-container">
+            <div class="foods-image-container">
+                <img src="./pic/beef-taco.jpeg">
+            </div>
+            <div class="foods-name-container">
+                <p>Beef Tacos</p>
+            </div>
+            <div class="foods-price-container">
+                <p>$13.45</p>
+            </div>
+            <div class="add-to-order-container">
+                <button class="add-to-order">Add To Order</button>
+            </div>
+        </div>
+    </main>
+    
+    <div class="not-found-message">Not Found Foods</div>
+
+    <div class="line2">
+        <div class="line"></div>
+    </div>
+
+    <div class="menu-container">
+        <div class="sancho-left-section" data-aos="fade-right"
+        data-aos-offset="200"
+        data-aos-delay="50"
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-out">
+            <h1 class="sancho-header">Sanchos</h1>
+            <div class="sancho">
+                <h5 data-fill="...............................................................................................................................................">Sancho</h5>
+                <p>WE START WITH A FRESH FLOUR TORTILLA THEN WE LOAD IT WITH MEAT, SAUCE, CHEDDAR CHEESE, AND LETTUCE.</p>
+            </div>
+
+            <div class="sancho">
+                <h5 data-fill="...............................................................................................................................................">Chili Sancho</h5>
+                <p>WE START WITH A FRESH FLOUR TORTILLA THEN WE LOAD IT WITH MEAT, CHILI, SAUCE, CHEDDAR CHEESE, AND LETTUCE.</p>
+            </div>
+
+            <div class="sancho">
+                <h5 data-fill="...............................................................................................................................................">Sour Cream Sancho</h5>
+                <p>WE START WITH A FRESH FLOUR TORTILLA THEN WE LOAD IT WITH MEAT, SOUR CREAM, SAUCE, CHEDDAR CHEESE, AND LETTUCE.</p>
+            </div>
+
+            <div class="sancho">
+                <h5 data-fill="...............................................................................................................................................">Sanchez</h5>
+                <p>A FRESH FLOUR TORTILLA LOADED WITH MEAT, SAUCE, CHEDDAR CHEESE AND LETTUCE COVERED WITH CHILI CON QUESO.</p>
+            </div>
+
+            <div class="sancho">
+                <h5 data-fill="...............................................................................................................................................">Sancho Supreme</h5>
+                <p>WE START WITH A FRESH FLOUR TORTILLA THEN WE LOAD IT WITH MEAT, SOUR CREAM, SAUCE, CHEDDAR CHEESE, AND LETTUCE. COVERED WITH SAUCE, CHEDDAR CHEESE, AND CRISP LETTUCE.</p>
+            </div>
+        </div>
+        <div class="sancho-right-section" data-aos="fade-left"
+        data-aos-offset="200"
+        data-aos-delay="50"
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-out">
+            <img src="./pic/menu/sancho.webp" class="sancho-img">
+        </div>
+    </div>
+
+    <div class="menu-container">
+        <div class="queso-left-section" data-aos="fade-right"
+        data-aos-offset="200"
+        data-aos-delay="20"
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-out">
+            <img src="./pic/menu/queso-dip-8.jpg" class="queso-img">
+        </div>
+        <div class="queso-right-section" data-aos="fade-left"
+        data-aos-offset="200"
+        data-aos-delay="20"
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-out">
+            <h1 class="queso-header">Queso</h1>
+            <div class="queso">
+                <h5 data-fill="...............................................................................................................................................">CCQ Meat w Chips </h5>
+                <p>A TUB OF OUR MEATY SPICED CHEESE DIP SERVED WITH YOUR CHOICE OF A FRESH BAG OF TORTILLA CHIPS OR A WARMED ROLL OF FLOUR TORTILLAS. HIT THE YELLOW PEPPER FOR MORE OPTIONS!!</p>
+            </div>
+
+            <div class="queso">
+                <h5 data-fill="...............................................................................................................................................">CCQ w Chips or Torts</h5>
+                <p>A TUB OF OUR SPICED CHEESE DIP SERVED WITH YOUR CHOICE OF A FRESH BAG OF TORTILLA CHIPS OR A WARMED ROLL OF FLOUR TORTILLAS. HIT THE YELLOW PEPPER FOR MORE OPTIONS!!</p>
+            </div>
+
+            <div class="queso">
+                <h5 data-fill="...............................................................................................................................................">Chili Con Queso 4oz (choice of chips or tortillas)</h5>
+                <p>A 4OZ TUB OF OUR SPICED CHEESE DIP SERVED WITH A FRESH BAG OF TORTILLA CHIPS OR A WARMED ROLL OF FLOUR TORTILLAS. HIT THE YELLOW PEPPER FOR MORE OPTIONS!!</p>
+            </div>
+
+            <div class="queso">
+                <h5 data-fill="...............................................................................................................................................">Chili Con Queso 8oz (choice of chips or tortillas)</h5>
+                <p>AN 8OZ TUB OF OUR SPICED CHEESE DIP SERVED WITH YOUR CHOICE OF A FRESH BAG OF TORTILLA CHIPS OR A WARMED ROLL OF FLOUR TORTILLAS. HIT THE YELLOW PEPPER FOR MORE OPTIONS!!</p>
+            </div>
+
+            <div class="queso">
+                <h5 data-fill="...............................................................................................................................................">Tub of Chili Con Queso</h5>
+                <p>A TUB OF OUR SPICED CHEESE!</p>
+            </div>
+
+            <div class="queso">
+                <h5 data-fill="...............................................................................................................................................">Tub of Chili Con Queso w/ Mea</h5>
+                <p>A TUB OF OUR MEATY SPICED CHEESE!</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="menu-container">
+        <div class="sancho-left-section" data-aos="fade-right"
+        data-aos-offset="200"
+        data-aos-delay="50"
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-out">
+            <h1 class="sancho-header">Specialties</h1>
+            <div class="sancho">
+                <h5 data-fill="...............................................................................................................................................">Baja Chicken Enchilada Soup</h5>
+                <p>A TANGY SOUP WTIH CHICKEN, TOMATOES, CORN, BLACK BEANS, GREEN AND RED PEPPERS AND A HINT OF CHIPOLTE PEPPERS.</p>
+            </div>
+
+            <div class="sancho">
+                <h5 data-fill="...............................................................................................................................................">Bean Tostado</h5>
+                <p>STARTS WITH A FRESH, CRUNCHY SHELL, THEN WE ADD SAVORY BEANS AND TOP IT OFF WITH GRATED CHEDDAR CHEESE AND CRISP LETTUCE.</p>
+            </div>
+
+            <div class="sancho">
+                <h5 data-fill="...............................................................................................................................................">Beef Nacho Supreme</h5>
+                <p>WE START WITH CRISP CORN CHIPS, THEN ADD SEASONED BEEF, REFRIED BEANS, CHEDDAR AND MONTEREY JACK CHEESES. TOPPED WITH SOUR CREAM, GREEN ONIONS, OLIVES, TOMATOES, JALAPENOS, AND CHILI CON QUESO.</p>
+            </div>
+
+            <div class="sancho">
+                <h5 data-fill="...............................................................................................................................................">Beef Quesadilla</h5>
+                <p>A LARGE FLOUR TORTILLA LAYERED WITH A DELICIOUS MIXTURE OF CHEDDAR AND MONTEREY JACK CHEESE, CHIPOTLE RANCH DRESSING, AND SEASONED GROUND BEEF!</p>
+            </div>
+
+            <div class="sancho">
+                <h5 data-fill="...............................................................................................................................................">Borracho</h5>
+                <p>A TREAT FOR THE MEXICAN FOOD GOURMET. WE START WITH A CRISP FRIED FLOUR SHELL, FILL IT WITH MEAT, MEXICALLI RICE, SOUR CREAM AND SAUCE. WE COVER THIS WITH ANOTHER FLOUR SHELL THEN TOP IT OFF WITH CHEDDAR CHEESE.</p>
+            </div>
+
+            <div class="sancho">
+                <h5 data-fill="...............................................................................................................................................">California Wrap</h5>
+                <p>CRISP AND COOL. A GOLDEN WHOLE WHEAT TORTILLA FILLED WITH GRILLED CHICKEN BREAST, HICKORY SMOKED BACON, LETTUCE, MONTEREY JACK, GUACAMOLE, RANCH, AND FRESCA.</p>
+            </div>
+
+            <div class="sancho">
+                <h5 data-fill="...............................................................................................................................................">Cheddar Jack Quesadilla</h5>
+                <p>A LARGE FLOUR TORTILLA LAYERED WITH A DELICIOUS MIXTURE OF CHEDDAR AND MONTEREY JACK CHEESE, AND OUR CHIPOTLE RANCH DRESSING ALL GRILLED TO PERFECTION!</p>
+            </div>
+        </div>
+        <div class="sancho-right-section" data-aos="fade-left"
+        data-aos-offset="200"
+        data-aos-delay="50"
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-out">
+        <div class="sancho-container">
+            <div class="sancho">
+                <h5 data-fill="...............................................................................................................................................">Chicken Bacon Ranch Quesadilla</h5>
+                <p>WE START WITH OUR LARGE FLOUR TORTILLA LAYERED WITH A MIX OF CHEDDAR AND MONTEREY JACK CHEESE, RANCH DRESSING AND A GENEROUS PORTION OF DELICIOUS CHICKEN AND SAVORY CRUMBLED BACON.</p>
+            </div>
+    
+            <div class="sancho">
+                <h5 data-fill="...............................................................................................................................................">Kids Quesadilla</h5>
+                <p>TWO SMALL FLOUR TORTILLAS FILLER WITH CHEDDAR AND MONTEREY JACK CHEESE GRILLED TO PERFECTION.</p>
+            </div>
+    
+            <div class="sancho">
+                <h5 data-fill="...............................................................................................................................................">Meat & Bean Tostado</h5>
+                <p>STARTS WITH A FRESH, CRUNCHY SHELL, THEN WE OUR SEASONED MEAT AND ADD SAVORY BEANS THEN TOP IT OFF WITH GRATED CHEDDAR CHEESE AND CRISP LETTUCE.</p>
+            </div>
+    
+            <div class="sancho">
+                <h5 data-fill="...............................................................................................................................................">Beef Quesadilla</h5>
+                <p>A LARGE FLOUR TORTILLA LAYERED WITH A DELICIOUS MIXTURE OF CHEDDAR AND MONTEREY JACK CHEESE, CHIPOTLE RANCH DRESSING, AND SEASONED GROUND BEEF!</p>
+            </div>
+    
+            <div class="sancho">
+                <h5 data-fill="...............................................................................................................................................">Meat Nacho</h5>
+                <p>WE USE A FRIED CORN SHELL COVERED WITH MEAT AND CHEDDAR CHEESE THEN TOP IT WITH JALAPENO PEPPERS.</p>
+            </div>
+
+            <div class="sancho">
+                <h5 data-fill="...............................................................................................................................................">Meat Tostado</h5>
+                <p>STARTS WITH A FRESH, CRUNCHY SHELL, THEN WE ADD OUR SEASONED MEAT AND TOP IT OFF WITH GRATED CHEDDAR CHEESE AND CRISP LETTUCE.</p>
+            </div>
+    
+            <div class="sancho">
+                <h5 data-fill="...............................................................................................................................................">Mexican Pizza</h5>
+                <p>STARTS WITH A CRISP FRIED FLOUR SHELL, LAYERED WITH SAVORY REFRIED BEANS AND SEASONED MEAT, TOPPED WITH ANOTHER FLOUR SHELL AND SMOTHERED WITH OUR TANGY SAUCE, CHEDDAR AND MONTEREY JACK CHEESES. THEN WE SPRINKLE BITS OF GREEN ONIONS, TOMATOES, AND SLICED BLACK OLIVES OVER THE TOP.</p>
+            </div>
+
+            <div class="sancho">
+                <h5 data-fill="...............................................................................................................................................">Poco Pizza</h5>
+                <p>A FAVORITE WITH THE KIDS. A CRISP CORN SHELL COVERED WITH MEAT, CHEDDAR AND MONTEREY JACK CHEESES TOPPED WITH SLICED OLIVES.</p>
+            </div>
+
+            <div class="sancho">
+                <h5 data-fill="...............................................................................................................................................">Pork Nachos</h5>
+                <p>WE START WITH CRISP CORN CHIPS THEN LAYER ON CHEDDAR AND MONTEREY JACK CHEESES AND OUR DELICIOUS HAND SHREDDED PORK. THEN IT IS TOPPED WITH GREEN ONIONS, OLIVES, TOMATOES, JALAPENOS, SOUR CREAM AND CHILI CON QUESO.</p>
+            </div>
+    
+            <div class="sancho">
+                <h5 data-fill="...............................................................................................................................................">Pork Quesadilla</h5>
+                <p>LARGE FLOUR TORTILLA LAYERED WITH A MIX OF CHEDDAR, MONTEREY JACK CHEESE, CHIPOTLE RANCH AND OUR TASTY PORK GRILLED TO PERFECTION.</p>
+            </div>
+
+        </div>
+        </div>
+    </div>
+
+    <div class="menu-container">
+        <div class="queso-left-section" data-aos="fade-right"
+        data-aos-offset="200"
+        data-aos-delay="20"
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-out">
+            <img src="./pic/menu/enchilada-scaled-357ceaae.jpeg" class="queso-img">
+        </div>
+        <div class="queso-right-section" data-aos="fade-left"
+        data-aos-offset="200"
+        data-aos-delay="20"
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-out">
+            <h1 class="queso-header">Enchiladas</h1>
+            <div class="queso">
+                <h5 data-fill="...............................................................................................................................................">Cheese Enchilada </h5>
+                <p>A FRESH FLOUR SHELL FILLED WITH CHEDDAR CHEESE AND SAUCE TOPPED WITH SAUCE AND CHEDDAR.</p>
+            </div>
+
+            <div class="queso">
+                <h5 data-fill="...............................................................................................................................................">Chicken Enchilada</h5>
+                <p>A FLOUR TORTILLA LOADED WITH GRILLED CHICKEN BREASTS, SAUCE, AND TOPPED WITH MONTEREY JACK CHEESE AND TOMATOES.</p>
+            </div>
+
+            <div class="queso">
+                <h5 data-fill="...............................................................................................................................................">Chicken Enchilada Supreme</h5>
+                <p>A FLOUR TORTILLA FILLED WITH GRILLED CHICKEN BREAST, CHEDDAR CHEESE AND SOUR CREAM, THEN TOPPED WITH MONTEREY JACK CHEESE AND LETTUCE.</p>
+            </div>
+
+            <div class="queso">
+                <h5 data-fill="...............................................................................................................................................">Chili Enchilada</h5>
+                <p>A FRESH FLOUR SHELL FILLED WITH SEASONED MEAT AND SAUCE TOPPED WITH OUR HOMEMADE CHILI, SAUCE AND CHEDDAR.</p>
+            </div>
+
+            <div class="queso">
+                <h5 data-fill="...............................................................................................................................................">Enchilada w/ Meat</h5>
+                <p>A FRESH FLOUR SHELL FILLED WITH SEASONED MEAT AND SAUCE TOPPED WITH SAUCE AND CHEDDAR.</p>
+            </div>
+
+            <div class="queso">
+                <h5 data-fill="...............................................................................................................................................">Sour Cream Enchilada</h5>
+                <p>A FRESH FLOUR SHELL FILLED WITH SEASONED MEAT, SOUR CREAM, AND SAUCE TOPPED WITH SAUCE AND CHEDDAR.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="menu-container">
+        <div class="sancho-left-section" data-aos="fade-right"
+        data-aos-offset="200"
+        data-aos-delay="50"
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-out">
+            <h1 class="sancho-header">Burritos</h1>
+            <div class="sancho">
+                <h5 data-fill="...............................................................................................................................................">Bean Burrito</h5>
+                <p>A FRESH FLOUR TORTILLA LADED WITH OUR SAVORY REFRIED BEANS, GRATED CHEESE, AND OUR TANGY SAUCE. ALL ROLLED UP AND SERVED PIPING HOT.</p>
+            </div>
+
+            <div class="sancho">
+                <h5 data-fill="...............................................................................................................................................">Chicken Burrito</h5>
+                <p>A WHOLE WHEAT TORTILLA THEN LOAD IT WITH MEXICALLI RICE, GRILLED CHICKEN BREAST, CHEDDAR CHEESE, AND SAUCE.</p>
+            </div>
+
+            <div class="sancho">
+                <h5 data-fill="...............................................................................................................................................">Chicken Burrito Supreme</h5>
+                <p>A WHOLE WHEAT TORTILLA FILLED WITH SAVORY REFRIED BEANS, MEXICALLI RICE, GRILLED CHICKEN BREAST, SAUCE, SOUR CREAM, AND MONTEREY JACK CHEESE, THEN TOPPED WITH CHEDDAR CHEESE.</p>
+            </div>
+
+            <div class="sancho">
+                <h5 data-fill="...............................................................................................................................................">Chili Burrito</h5>
+                <p>A FRESH FLOUR TORTILLA LADED WITH OUR SAVORY REFRIED BEANS, MEAT, GRATED CHEESE, AND OUR TANGY SAUCE. ALL COVERED IN OUR HOMEMADE CHILI</p>
+            </div>
+
+            <div class="sancho">
+                <h5 data-fill="...............................................................................................................................................">Pork Burrito</h5>
+                <p>WE START WITH OUR SOFT 10″ FLOUR TORTILLA AND LOAD IT WITH REFRIED BEANS, SAUCE, OUR DELICIOUS HAND SHREDDED PORK, AND MONTEREY JACK CHEESE.</p>
+            </div>
+        </div>
+        <div class="sancho-right-section" data-aos="fade-left"
+        data-aos-offset="200"
+        data-aos-delay="50"
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-out">
+            <img src="./pic/menu/chicken-burrito-sup-scaled-21987f3c.jpeg" class="sancho-img">
+        </div>
+    </div>
+
+    <div class="menu-container">
+        <div class="sancho-left-section" data-aos="fade-right"
+        data-aos-offset="200"
+        data-aos-delay="50"
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-out">
+            <h1 class="sancho-header">Sides</h1>
+            <div class="sancho">
+                <h5 data-fill="...............................................................................................................................................">1 Queso Melt</h5>
+                <p>A FLOUR TORTILLA FILLED WITH CHEDDAR CHEESE.</p>
+            </div>
+
+            <div class="sancho">
+                <h5 data-fill="...............................................................................................................................................">3 Amigos</h5>
+                <p>ATHREE FLOUR TORTILLAS FILLED WITH CHEDDAR CHEESE.</p>
+            </div>
+
+            <div class="sancho">
+                <h5 data-fill="...............................................................................................................................................">Mexicalli Rice</h5>
+                <p>FRESH COOKED RICE WITH GREEN PEPPERS, BACON AND OTHER SEASONINGS, THEN WE TOP IT OFF WITH SAUCE AND CHEDDAR CHEESE.</p>
+            </div>
+
+            <div class="sancho">
+                <h5 data-fill="...............................................................................................................................................">Refried Beans</h5>
+                <p>PREMIUM GRADE PINTO BEANS PREPARED IN OUR KITCHEN, TOPPED WITH OUR OWN TANGY SAUCE AND GRATED CHEDDAR CHEESE.</p>
+            </div>
+        </div>
+        <div class="sancho-right-section" data-aos="fade-left"
+        data-aos-offset="200"
+        data-aos-delay="50"
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-out">
+        <h1 class="sancho-header">Sweets</h1>
+        <div class="sancho">
+            <h5 data-fill="...............................................................................................................................................">Apple Empanada</h5>
+            <p>A ROLLED FLOUR TORTILLA FILLED WITH YOUR FAVORITE FRUIT FILLING AND ROLLED IN SUGAR AND CINNAMON.</p>
+        </div>
+
+        <div class="sancho">
+            <h5 data-fill="...............................................................................................................................................">Bunuelos</h5>
+            <p>A DESSERT TREAT WHICH STARTS WITH FRIED FLOUR TORTILLAS AND THEN WE COVER THEM WITH SUGAR AND CINNAMON.</p>
+        </div>
+
+        <div class="sancho">
+            <h5 data-fill="...............................................................................................................................................">Cherry Empanada</h5>
+            <p>A ROLLED FLOUR TORTILLA FILLED WITH YOUR FAVORITE FRUIT FILLING AND ROLLED IN SUGAR AND CINNAMON.</p>
+        </div>
+
+        <div class="sancho">
+            <h5 data-fill="...............................................................................................................................................">Choco Taco</h5>
+            <p>PA DELICIOUS SUGAR WAFER SHAPED LIKE A TACO, FILLED WITH RICH VANILLA FUDGE ICE CREAM AND TOPPED WITH MILK CHOCOLATE AND PEANUTS. NOT RECOMMENDED FOR DELIVERY.</p>
+        </div>
+        </div>
+    </div>
+
+    <div class="menu-container">
+        <div class="sancho-left-section" data-aos="fade-right"
+        data-aos-offset="200"
+        data-aos-delay="50"
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-out">
+            <h1 class="sancho-header">Extras</h1>
+            <div class="sancho">
+                <h5 data-fill="...............................................................................................................................................">Tub of Cheddar</h5>
+                <p>TUB OF SHREDDED CHEDDAR CHEESE</p>
+            </div>
+
+            <div class="sancho">
+                <h5 data-fill="...............................................................................................................................................">Tub of Chicken</h5>
+                <p>TUB OF GRILLED CHICKEN</p>
+            </div>
+
+            <div class="sancho">
+                <h5 data-fill="...............................................................................................................................................">Tub of Guacamole</h5>
+                <p>TUB OF GUACAMOLE</p>
+            </div>
+
+            <div class="sancho">
+                <h5 data-fill="...............................................................................................................................................">Tub of Lettuce</h5>
+                <p>TUB OF SHREDDED LETTUCE</p>
+            </div>
+
+            <div class="sancho">
+                <h5 data-fill="...............................................................................................................................................">Tub of Monterey Jack Cheese</h5>
+                <p>TUB OF SHREDDED MONTEREY JACK CHEESE</p>
+            </div>
+
+            <div class="sancho">
+                <h5 data-fill="...............................................................................................................................................">Tub of Seasoned Beef</h5>
+                <p>TUB OF SEASONED GROUND BEEF</p>
+            </div>
+
+            <div class="sancho">
+                <h5 data-fill="...............................................................................................................................................">Tub of Sour Cream</h5>
+                <p>TUB OF SOUR CREAM</p>
+            </div>
+        </div>
+        <div class="sancho-right-section" data-aos="fade-left"
+        data-aos-offset="200"
+        data-aos-delay="50"
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-out">
+        <h1 class="sancho-header">Salsa</h1>
+        <div class="sancho">
+            <h5 data-fill="...............................................................................................................................................">Fiesta Dip 2oz</h5>
+            <p>OUR OWN UNIQUE COLD DIP CREATED WITH A SPECIAL BLEND OF HERBS AND SPICES.</p>
+        </div>
+
+        <div class="sancho">
+            <h5 data-fill="...............................................................................................................................................">Fiesta Dip 4oz</h5>
+            <p>OUR OWN UNIQUE COLD DIP CREATED WITH A SPECIAL BLEND OF HERBS AND SPICES.</p>
+        </div>
+
+        <div class="sancho">
+            <h5 data-fill="...............................................................................................................................................">Tub of Mild Sauce</h5>
+            <p>MILD SAUCE</p>
+        </div>
+
+        <div class="sancho">
+            <h5 data-fill="...............................................................................................................................................">Tub of Hot Sauce</h5>
+            <p>HOT SAUCE</p>
+        </div>
+
+        <div class="sancho">
+            <h5 data-fill="...............................................................................................................................................">Tub of Salsa with Green Chilies</h5>
+            <p>TITLE SAYS IT ALL</p>
+        </div>
+
+        <div class="sancho">
+            <h5 data-fill="...............................................................................................................................................">Tub of Jalapeno Peppers</h5>
+            <p>TUB OF SLICED JALAPENO PEPPERS</p>
+        </div>
+        </div>
+    </div>
+
+    <div class="drink-container" data-aos="fade-left"
+    data-aos-offset="200"
+    data-aos-delay="50"
+    data-aos-duration="1000"
+    data-aos-easing="ease-in-out">
+        <div class="middle-section">
+            <h1 class="sancho-header">Drinks</h1>
+            <div class="sancho">
+                <h5 data-fill=".................................................................................................................................................................................">2 Liter</h5>
+                <p>PEPSI, DIET PEPSI OR MOUNTAIN DEW</p>
+            </div>
+
+            <div class="sancho">
+                <h5 data-fill="...........................................................................................................................................................................">20oz Bottle</h5>
+                <p>AQUAFINA, DIET MOUNTAIN DEW, WILD CHERRY PEPSI</p>
+            </div>
+
+            <div class="sancho">
+                <h5 data-fill="..........................................................................................................................................................................................................">Small, Medium or Large Drink</h5>
+                <p>DR. PEPPER, PEPSI, ROOT BEER, SIERRA MIST, MOUNTAIN DEW, LEMONADE, ICED TEA, DIET DR. PEPPER OR DIET PEPSI</p>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="shop-picture-container">
+        <div class="picture-container">
+            <img src="./pic/073.jpg">
+            <img src="./pic/019-927cc52f.webp">
+            <img src="./pic/023-b8faf6af.webp">
+        </div>
+        <div class="final-image">
+            <img src="./pic/010-2.jpg">
+        </div>
+    </div>
+
+    
+    <footer class="footer-container">
+        <div class="footer-left-section">
+            <img src="./pic/footer logo.png">
+            <p>don't forget <br>#tacotuesday</p>
+            <button class="phone-number">785-625-7114</button>
+        </div>
+
+        <div class="footer-middle-section">
+            <a href="index.html" class="home">Home</a>
+            <div class="footer-menu">
+                <a href="#">Menu</a>
+            </div>
+            <div class="footer-about-us">
+                <a href="about.html">About Us</a>
+            </div>
+
+            <div class="shop-hour">
+                <p>Sunday - Thursday<br>
+                    11AM to 10PM</p>
+                <p>
+                    Friday - Saturday<br>
+                    11AM to 11PM
+                </p>
+            </div>
+        </div>
+
+        <div class="footer-right-section">
+            <img src="./pic/footer-logo-2.png" class="footer-image">
+        </div>
+    </section>
+</footer>
+
+    <div class="line2">
+        <div class="line"></div>
+    </div>
+
+    <footer class="bottom-footer-container">
+        <div class="bottom-footer-left-section">
+            <div class="social-media-container">
+                <i class="fa-brands fa-facebook-f"></i>
+                <i class="fa-brands fa-twitter"></i>
+            </div>
+        </div>
+        <div class="bottom-footer-middle-section">
+            <p>© 2023 Taco Shop - Hays, KS. All rights reserved</p>
+            <p>Crafted by Sky</p>
+        </div>
+        <div class="bottom-footer-right-section">
+            <a href="#" title="Back To Top">
+                <i class="fa-solid fa-chevron-up"></i>
+            </a>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script src="carts.js" type="module"></script>
+    <script src="home.js" type="module"></script>
+    <script src="./menu.js" type="module"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
+
+
+<img src=>

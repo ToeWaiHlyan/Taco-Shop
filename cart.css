@@ -1,0 +1,407 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Oswald:wght@200;700&family=Roboto:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Oswald:wght@200;700&family=Roboto:wght@300;400;500&display=swap');
+
+body
+{
+    background-color: #FEFCEF;
+}
+
+.cart-header
+{
+    height: 100px;
+    padding-left: 30px;
+    padding-right: 30px;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background-color: white;
+}
+
+.cart-container
+{
+    padding: 50px 50px;
+    width: 100%;
+    max-width: 1100px;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 0px;
+    text-align: center;
+    align-items: center;
+}
+
+.cart-header-middle-section 
+{
+    font-size: 30px;
+    color: #14aa8f;
+    font-family: Oswald,Arial, Helvetica, sans-serif;
+}
+
+
+.cart-header-left-section 
+{
+    max-width: 500px;
+}
+
+.cart-header-left-section img ,
+.cart-header-right-section img
+{
+    width: 100px;
+    height: auto;
+}
+
+
+section
+{
+    color: #14aa8f;
+    font-family: Oswald,Arial, Helvetica, sans-serif;
+}
+
+.cart-order-container
+{
+    max-width: 1100px;
+    margin-top: 140px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.order-grid
+{
+    display: grid;
+    grid-template-columns: 620px 350px;
+    column-gap: 25px;
+    align-items: start;
+}
+
+.order-header
+{
+    font-size: 30px;
+    color: #14aa8f;
+    font-family: Oswald,Arial, Helvetica, sans-serif;
+    margin-bottom: 20px;
+}
+
+.order-item 
+{
+    border: 1px solid rgb(222, 222, 222);
+    border-radius: 5px;
+    padding: 18px;
+    margin-bottom: 20px;
+}
+
+.order-item-grid
+{
+    display: grid;
+    grid-template-columns: 300px 150px 100px;
+    column-gap: 25px;
+    margin-bottom: 50px;
+    border-bottom: 1px solid lightgray;
+}
+
+.order-item img 
+{
+    border-radius: 10px;
+    max-width:300px;
+    max-height: 200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.order-name 
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.order-name p 
+{
+    font-size: 20px;
+}
+
+.quantity-container
+{
+    display: flex;
+    gap:20px;
+    text-align: center;
+    align-items: center;
+}
+
+.quantity-left-section button,
+.quantity-right-section button
+{
+    width: 50px;
+    height: 50px;
+    padding: 5px;
+    border:none;
+    font-size: 25px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.quantity-left-section button:hover,
+.quantity-right-section button:hover
+{
+    background-color: lightgray;
+}
+
+
+.taco-quantity 
+{
+    margin-top: 20px;
+}
+
+.delete-order
+{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.delete-order img 
+{
+    width: 50px;
+    cursor: pointer;
+    margin-top: -60px;
+}
+
+
+.payment-grid
+{
+    border: 1px solid rgb(222, 222, 222);
+    border-radius: 4px;
+    padding: 18px;
+    margin-bottom: 20px;
+}
+
+.payment-quantity-grid,
+.total-row
+{
+    font-size: 18px;
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: 1fr auto;
+}
+
+.payment-title
+{
+    font-size: 30px;
+}
+
+.payment-quantity-money
+{
+    margin-bottom: 10px;
+}
+
+.total-row
+{
+    margin-top: 20px;
+    border-top: 1px solid rgba(184, 184, 184, 0.637);
+    margin-bottom: 20px;
+}
+.total-row div 
+{
+    margin-top: 10px;
+}
+
+
+.order-button 
+{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+    height: 50px;
+    border:none;
+    border-radius: 10px;
+}
+
+.order-button img 
+{
+    width:40px;
+    margin-right: 5px;
+}
+
+.order-button:hover 
+{
+    background-color: white;
+    color: #14aa8f;
+    border:1px solid #14aa8f;
+}
+
+
+
+@media screen and (max-width : 1000px)
+{
+    .cart-order-container
+    {
+        max-width: 500px;
+    }
+
+    .order-grid
+    {
+        grid-template-columns: 1fr;
+    }
+
+    .order-item-grid
+    {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        row-gap: 30px;
+        position: relative;
+    }
+
+    .delete-order
+    {
+        position: absolute;
+        bottom:0px;
+        right: 3px;
+    }
+
+    .delete-order img 
+    {
+        width: 30px;
+    }
+
+    .payment-grid
+    {
+        grid-row: 1;
+        margin-bottom: 10px;
+    }
+}
+
+
+@media screen and (max-width : 1024px)
+{
+    .cart-order-container
+    {
+        max-width: 1000px;
+    }
+}
+
+
+@media screen and (max-width : 768px)
+{
+    .cart-order-container
+    {
+        max-width: 700px;
+    }
+}
+
+@media screen and (max-width : 425px)
+{
+
+    .order-header
+    {
+        font-size: 25px;
+    }
+
+    .order-item-grid
+    {
+        display: grid;
+        grid-template-columns: 1fr;
+        row-gap: 30px;
+    }
+
+    .order-item-grid p
+    {
+        font-size: 18px;
+    }
+
+    .payment-grid div 
+    {
+        font-size: 18px;
+    }
+
+    .order-cart 
+    {
+        font-size: 25px;
+    }
+
+
+    .food-img 
+    {
+        width: 300px;
+        height: 200px;
+    }
+
+    .cart-order-container
+    {
+        max-width: 390px;
+    }
+}
+
+@media screen and (max-width : 393px)
+{
+    .cart-order-container
+    {
+        max-width: 300px;
+    }
+
+    .payment-grid div 
+    {
+        font-size: 18px;
+    }
+
+    .food-img 
+    {
+        width: 250px;
+        height: 200px;
+    }
+
+    .order-item-grid p
+    {
+        font-size: 18px;
+    }
+
+    .cart-logo 
+    {
+        max-width: 90px;
+    }
+
+    .cart-header-right-section img 
+    {
+        max-width: 90px;
+    }
+}
+
+
+@media screen and (max-width : 375px)
+{
+    .cart-order-container
+    {
+        max-width: 300px;
+    }
+
+    .payment-grid div 
+    {
+        font-size: 18px;
+    }
+
+    .food-img 
+    {
+        width: 250px;
+        height: 200px;
+    }
+
+    .order-item-grid p
+    {
+        font-size: 18px;
+    }
+
+    .cart-logo 
+    {
+        max-width: 90px;
+    }
+
+    .cart-header-right-section img 
+    {
+        max-width: 90px;
+    }
+}
