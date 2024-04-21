@@ -286,15 +286,49 @@ section
 }
 
 
-@media screen and (max-width : 768px)
+@media screen and (max-width : 1000px)
 {
+    .order-header
+    {
+        font-size: 25px;
+    }
+
+    .order-item-grid
+    {
+        display: grid;
+        grid-template-columns: 1fr;
+        row-gap: 30px;
+    }
+
+    .order-item-grid p
+    {
+        font-size: 18px;
+    }
+
+    .payment-grid div 
+    {
+        font-size: 18px;
+    }
+
+    .order-cart 
+    {
+        font-size: 25px;
+    }
+
+
+    .food-img 
+    {
+        width: 300px;
+        height: 200px;
+    }
+
     .cart-order-container
     {
-        max-width: 700px;
+        max-width: 390px;
     }
 }
 
-@media screen and (max-width:630px)
+@media screen and (max-width:700px)
 {
     .order-header
     {
